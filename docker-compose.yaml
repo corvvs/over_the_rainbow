@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: ./docker/shellcode
+    volumes:
+      - .:/home
+    working_dir: /home 
+    tty: true
+    privileged: true
